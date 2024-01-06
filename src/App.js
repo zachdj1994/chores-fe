@@ -1,6 +1,7 @@
 import './App.css';
 import { AppShell, Burger } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
+import ChoreList from "./ChoreList";
 
 function App() {
     const [opened, { toggle }] = useDisclosure();
@@ -28,7 +29,9 @@ function App() {
 
           <AppShell.Navbar p="md">Navbar</AppShell.Navbar>
 
-          <AppShell.Main>Main</AppShell.Main>
+          <AppShell.Main>
+              <ChoreList></ChoreList>
+          </AppShell.Main>
       </AppShell>
     </div>
   );
